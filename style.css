@@ -310,20 +310,26 @@ body {
 }
 
 /* ================= RESPONSIVE ================= */
-@media (max-width: 1000px) {
+@media (max-width: 768px) {
     .layout {
         flex-direction: column;
-        padding: 40px 20px;
+        gap:40px;
+        padding: 30px 16px;
     }
 
     .profile-panel,
     .map {
         width: 100%;
+        position:static;
     }
 
     .map {
         display: flex;
         justify-content: center;
+    }
+
+    .level-container {
+        align-items: center;
     }
 }
 
@@ -358,4 +364,58 @@ body {
     border-radius: 6px;
     display: block;
     object-fit: contain;
+}
+
+@media (max-width: 768px) {
+
+    .level {
+        width: 100%;
+        max-width: 360px;
+        height: auto;
+        padding: 18px 0;
+    }
+
+    .level:hover {
+        transform: none;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .profile-panel h1 {
+        font-size: 2.2rem;
+        letter-spacing: 3px;
+    }
+
+    .level-content p {
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+
+    .modal-content {
+        padding: 25px;
+    }
+
+    .modal-content p {
+        font-size: 1.05rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .modal-content {
+        max-height: 90vh;
+        overflow-y: auto;
+    }
+
+    .close-btn {
+        top: 12px;
+        right: 12px;
+    }
+}
+
+@media (max-width: 500px) {
+    .skill-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
