@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aaryanvi | Tech Quest</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+<canvas id="bgCanvas"></canvas>
+<div class="scanlines"></div>
+
+<!-- MAIN LAYOUT -->
+<div class="layout">
+
+    <!-- LEFT PROFILE PANEL -->
+    <aside class="profile-panel">
+        <div class="profile-hex large">
+            <div class="profile-inner">
+                <img src="Profile.jpeg" alt="Aaryanvi Sharma">
+            </div>
+        </div>
+
+        <h1 class="glitch" data-text="AARYANVI SHARMA">AARYANVI SHARMA</h1>
+        <p class="tagline">B.Tech CSE Student @ MITS Gwalior</p>
+
+        <div class="xp-wrapper">
+            <span class="xp-label">SYSTEM RANK: BRONZE II</span>
+            <div class="xp-container">
+                <div class="xp-bar" id="xpBar"></div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- RIGHT GAME MAP -->
+    <main class="map">
+        <div class="level-container">
+
+            <div class="level" data-level="about">
+                <div class="level-number">01</div>
+                <div class="level-content">
+                    <i class="fas fa-user-astronaut"></i>
+                    <p>PLAYER INFO</p>
+                </div>
+            </div>
+
+            <div class="level" data-level="education">
+                <div class="level-number">02</div>
+                <div class="level-content">
+                    <i class="fas fa-graduation-cap"></i>
+                    <p>ACADEMICS</p>
+                </div>
+            </div>
+
+            <div class="level" data-level="skills">
+                <div class="level-number">03</div>
+                <div class="level-content">
+                    <i class="fas fa-microchip"></i>
+                    <p>SKILL TREE</p>
+                </div>
+            </div>
+
+            <div class="level" data-level="activity">
+                <div class="level-number">04</div>
+                <div class="level-content">
+                    <i class="fas fa-code"></i>
+                    <p>CODING STATS</p>
+                </div>
+            </div>
+
+            <div class="level" data-level="projects">
+                <div class="level-number">05</div>
+                <div class="level-content">
+                    <i class="fas fa-rocket"></i>
+                    <p>MISSIONS</p>
+                </div>
+            </div>
+
+            <div class="level boss" data-level="contact">
+                <div class="level-number">MAX</div>
+                <div class="level-content">
+                    <i class="fas fa-envelope"></i>
+                    <p>CONTACT</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+</div>
+
+<!-- MODAL -->
+<div id="modal" class="modal hidden">
+    <div class="modal-content">
+        <button class="close-btn"><i class="fas fa-times"></i></button>
+        <div id="modal-body"></div>
+    </div>
+</div>
+
+<audio id="bgMusic" loop>
+    <source src="assets/bgMusic.mp3" type="audio/mpeg">
+</audio>
+
+<button id="musicToggle" class="music-btn">
+    <i class="fas fa-volume-mute"></i>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
